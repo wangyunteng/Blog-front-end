@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-    <keep-alive v-if="!$route.meta.keepAlive">
-      <router-view></router-view>
-    </keep-alive>
-    <router-view></router-view>
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-  },
-};
+  name: 'App'
+}
 </script>
 
 <style>

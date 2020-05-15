@@ -1,17 +1,15 @@
-import VueRoter from 'vue-router';
-import vue from 'vue'
+import Vue from 'vue'
+import Router from 'vue-router'
+import HelloWorld from '@/components/HelloWorld'
 
-vue.use(VueRoter);
+Vue.use(Router)
 
-// 路由懒加载 component: () => import('../view/index.vue'),
-const router = new VueRoter({
+export default new Router({
   routes: [
     {
       path: '/',
-      component: () => import('../view/index.vue'),
-    },
-  ],
+      name: 'HelloWorld',
+      component: HelloWorld
+    }
+  ]
 })
-
-export default router
-

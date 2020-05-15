@@ -1,6 +1,6 @@
 # blodfrontend
 
-> vue博客前端
+> 博客前端
 
 ## Build Setup
 
