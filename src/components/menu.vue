@@ -40,7 +40,7 @@ export default {
     height: 60px;
     .showName {
       text-align: center;
-      margin-left: 50px;
+      margin-left: 40%;
       margin-top: 10px;
       overflow: hidden;
       width: 70px;
@@ -112,8 +112,7 @@ export default {
       overflow: hidden;
       list-style-type: none;
       width: fit-content;
-      margin-left: 50%;
-      transform: translateX(-50%);
+      margin-left: 10%;
       display: inline-block;
       .active {
         background: #c39aad;

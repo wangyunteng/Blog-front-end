@@ -15,3 +15,12 @@ body {
   padding: 0px;
   line-height: unset;
 }
+
+.showAllWord {
+  position: relative;
+}
+#showAllWord {
+  color: #444;
+  font-size: 14px;
+  background: rgba(12, 123, 162, 0.55);
+}

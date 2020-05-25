@@ -3,3 +3,4 @@
 /dist/
 /*.js
 src/unit/*.js
+src/*.vue
