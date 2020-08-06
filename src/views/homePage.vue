@@ -12,21 +12,13 @@
           <div class="imgAnimotion"></div>
         </div>
         <p class="showCard-content">
-          -webkit-animation-name:'myAnimation'; /* 动画属性名，也就是我们前面keyframes定义的动画名*/
-          -webkit-animation-delay:2s; /*动画延迟时间*/
-          -webkit-animation-duration:2s; /*动画持续时间*/
-          -webkit-animation-timing-function:ease-in-out;  /* 动画频率，和transition-timing-function是一样的*/
-          -webkit-animation-iteration-count:3; /*定义循环资料，infinite为无限次*/
-          -webkit-animation-direction:alternate; /* 定义动画方式*/
-          ————————————————
-          版权声明：本文为CSDN博主「Dewey666」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-          原文链接：https://blog.csdn.net/it666dhw/article/details/78128004
+          -webkit-animation-name:'myAnimation';
         </p>
       </div>
       <p class="showCard-bq"><span class="iconfont icon-iconset0169"></span> 心情<span class="bq-line"></span></p>
       <p class="showCard-footer"><span>时间：2020-02-10</span>
-        <span class="showCard-watch"><span class="iconfont icon-iconset0169"></span>2020</span>
-        <span class="showCard-pl"><span class="iconfont icon-iconset0169"></span>16</span>
+        <span class="showCard-pl"><span class="iconfont icon-pinglun"></span>16</span>
+        <span class="showCard-watch"><span class="iconfont icon-kanguo"></span>2020</span>
       </p>
     </div>
   </div>
@@ -57,12 +49,12 @@ export default {
     .showCard {
       padding: 30px 50px 0px;
       box-sizing: border-box;
-      margin: 20px auto 0;
+      // margin: 20px auto 0;
       width: 800px;
       height: 318px;
       overflow: hidden;
       position: relative;
-      background: white;
+      background: #ffffff9e;
       border-radius: 5px;
       box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.16);
       cursor: pointer;
@@ -163,13 +155,20 @@ export default {
         font-size: 15px;
         line-height: 30px;
         .showCard-watch {
-          margin: 0px 0px 0px 447px;
+          float: right;
+          margin-right: 30px;
+          &:hover {
+            color: rgba(30, 144, 255, 0.58);
+          }
           span {
             margin-right: 5px;
           }
         }
         .showCard-pl {
-          margin: 0px 0px 0px 30px;
+          float: right;
+          &:hover {
+            color: rgba(30, 144, 255, 0.58);
+          }
           span {
             margin-right: 5px;
           }

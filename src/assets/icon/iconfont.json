@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "658031",
+      "name": "看过",
+      "font_class": "kanguo",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "5121501",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
       "icon_id": "435914",
       "name": "互动",
       "font_class": "hudong",

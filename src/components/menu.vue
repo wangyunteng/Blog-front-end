@@ -6,12 +6,13 @@
       <span class="showBottom"></span>
     </div>
     <ul class="navbox">
-      <li @click="changeTitle(1)" :class="indextab===1? 'active': ''"><span class="iconfont icon-shouye"></span>首页</li>
+      <li @click="first(1)" :class="indextab===1? 'active': ''"><span class="iconfont icon-shouye"></span>首页</li>
       <li @click="changeTitle(2)" :class="indextab===2? 'active': ''"><span class="iconfont icon-iconset0169"></span>标签</li>
       <li @click="changeTitle(3)" :class="indextab===3? 'active': ''"><span class="iconfont icon-neirong"></span>技术</li>
       <li @click="changeTitle(4)" :class="indextab===4? 'active': ''"><span class="iconfont icon-guidang"></span>日常</li>
       <li @click="changeTitle(5)" :class="indextab===5? 'active': ''"><span class="iconfont icon-hudong"></span>互动</li>
       <li @click="changeTitle(6)" :class="indextab===6? 'active': ''"><span class="iconfont icon-guanyuwomen"></span>关于</li>
+      <li @click="login(7)" :class="indextab===7? 'active': ''"><span class="iconfont icon-guanyuwomen"></span>登录</li>
     </ul>
   </section>
 </template>
@@ -25,7 +26,17 @@ export default {
     }
   },
   methods: {
+    first (data) {
+      this.$router.push('/')
+        .catch(data => {
+        })
+      this.indextab = data
+    },
     changeTitle: function (data) {
+      this.indextab = data
+    },
+    login (data) {
+      this.$router.push({path: './login'})
       this.indextab = data
     }
   }
@@ -34,9 +45,13 @@ export default {
 
 <style scoped lang="less">
   .nav {
+    position: relative;
     width: 100%;
+    position: fixed;
+    z-index: 10;
     /*background: rgba(242, 244, 248, 0.7);*/
-    background: #9e9e9e94;
+    // background: #9e9e9e94;
+    overflow: hidden;
     height: 60px;
     .showName {
       text-align: center;
@@ -108,6 +123,7 @@ export default {
     }
 
     .navbox {
+      position: relative;
       margin-top: 10px;
       overflow: hidden;
       list-style-type: none;
@@ -134,8 +150,8 @@ export default {
       position: absolute;
       top: 0; bottom: 0;
       left: 0; right: 0;
-      filter: blur(20px);
-      background: rgba(242, 244, 248, 0.7);
+      filter: blur(96px);
+      background: url(../assets/img/navbackground.jpg) no-repeat center/cover;
       z-index: -1;
     }
   }
