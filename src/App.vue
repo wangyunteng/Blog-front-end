@@ -2,8 +2,8 @@
   <div id="app">
     <img class="app-background" src="./assets/img/showcardImg.jpg" />
     <menu1></menu1>
-    <keep-alive>
-      <router-view class="showContent" v-if="$route.meta.keepAlive"></router-view>
+    <keep-alive v-if="$route.meta.keepAlive">
+      <router-view class="showContent"></router-view>
     </keep-alive>
     <router-view class="showContent" v-if="!$route.meta.keepAlive"></router-view>
   </div>

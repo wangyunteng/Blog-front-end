@@ -5,7 +5,7 @@
   <div class="middle">
     <div class="showCard">
         <p class="isTop">置顶</p>
-        <h1 class="showCard-title"><span>原创</span>活到老学到老</h1>
+        <h1 class="showCard-title" @click="changePage()"><span>原创</span>活到老学到老</h1>
       <div class="showImgContent">
         <div class="showCard-img">
           <img src="@/assets/img/showcardImg.jpg" alt="">
@@ -31,12 +31,31 @@
       <span class="showContent showAllWord">好好学习</span>
     </p>
   </div>
+<backAndTop></backAndTop>
 </section>
 </template>
 
 <script>
+import backAndTop from '../components/backAndTop'
 export default {
-  name: 'homePage'
+  name: 'homePage',
+  data () {
+    return {
+    }
+  },
+  components: {
+    backAndTop
+  },
+  mounted () {
+
+  },
+  methods: {
+    changePage () {
+      this.$router.push('/PageContent')
+    }
+  },
+  watch: {
+  }
 }
 </script>
 

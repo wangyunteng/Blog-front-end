@@ -2,17 +2,16 @@
   <section class="nav">
     <div class="showName">
       <span class="showTop"></span>
-      <span class="showName1">王云腾</span>
+      <span class="showName1">云中仙</span>
       <span class="showBottom"></span>
     </div>
     <ul class="navbox">
       <li @click="first(1)" :class="indextab===1? 'active': ''"><span class="iconfont icon-shouye"></span>首页</li>
       <li @click="changeTitle(2)" :class="indextab===2? 'active': ''"><span class="iconfont icon-iconset0169"></span>标签</li>
-      <li @click="changeTitle(3)" :class="indextab===3? 'active': ''"><span class="iconfont icon-neirong"></span>技术</li>
-      <li @click="changeTitle(4)" :class="indextab===4? 'active': ''"><span class="iconfont icon-guidang"></span>日常</li>
-      <li @click="changeTitle(5)" :class="indextab===5? 'active': ''"><span class="iconfont icon-hudong"></span>互动</li>
-      <li @click="changeTitle(6)" :class="indextab===6? 'active': ''"><span class="iconfont icon-guanyuwomen"></span>关于</li>
-      <li @click="login(7)" :class="indextab===7? 'active': ''"><span class="iconfont icon-guanyuwomen"></span>登录</li>
+      <li @click="changeTitle(3)" :class="indextab===3? 'active': ''"><span class="iconfont icon-guidang"></span>日常</li>
+      <li @click="changeTitle(4)" :class="indextab===4? 'active': ''"><span class="iconfont icon-hudong"></span>互动</li>
+      <li @click="changeTitle(5)" :class="indextab===5? 'active': ''"><span class="iconfont icon-guanyuwomen"></span>关于</li>
+      <li @click="changeTitle(6)" :class="indextab===6? 'active': ''"><span class="iconfont icon-guanyuwomen"></span>登录</li>
     </ul>
   </section>
 </template>
@@ -28,16 +27,15 @@ export default {
   methods: {
     first (data) {
       this.$router.push('/')
-        .catch(data => {
-        })
       this.indextab = data
     },
     changeTitle: function (data) {
       this.indextab = data
-    },
-    login (data) {
-      this.$router.push({path: './login'})
-      this.indextab = data
+      if (data === 2) {
+        this.$router.push('/label')
+      } else if (data === 6) {
+        this.$router.push({path: './login'})
+      }
     }
   }
 }
