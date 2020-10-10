@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "997408",
+      "name": "警告",
+      "font_class": "jinggao",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "13614068",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "14421022",
+      "name": "后退",
+      "font_class": "houtui",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "13769962",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
       "icon_id": "658031",
       "name": "看过",
       "font_class": "kanguo",

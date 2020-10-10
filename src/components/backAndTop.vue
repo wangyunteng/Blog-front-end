@@ -1,7 +1,7 @@
 <template>
 <section class="backAndTop">
-  <div class="back" @click="back()">后退</div>
-  <div class="top" ref="top" @click="goTop()">^</div>
+  <div class="back" @click="back()"><span class="iconfont icon-houtui"/></div>
+  <div class="top" ref="top" @click="goTop()"><span class="iconfont icon-shang"/></div>
 </section>
 </template>
 

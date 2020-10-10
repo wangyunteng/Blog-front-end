@@ -3,8 +3,8 @@
     <div class="showArticle">
       <h1 class="title">活到老学到老</h1>
        <p class="time">
-         <span class="publishTime">发布时间：2020-09-29 10:20</span>
-         <span class="updateTime">更新时间: 2020-09-29 10:20</span>
+         <span class="publishTime"><span class="iconfont icon-rili"></span>发布时间：2020-09-29 10:20</span>
+         <span class="updateTime"><span class="iconfont icon-rili"></span>更新时间: 2020-09-29 10:20</span>
        </p>
       <div class="article">
         <p>副技能：抽空在学习设计、产品的知识，如果逮住合适的机会，也会培养运营和营销的技能。
@@ -63,6 +63,9 @@
 
           理财：人生就像滚雪球。最重要之事是发现够湿的雪和长长的山坡。</p>
       </div>
+      <div class="articleBottom">
+        <p class="mark"><span class="iconfont icon-jinggao"></span>转载请注明：<a>云中仙博客</a></p>
+      </div>
     </div>
   </section>
 </template>
@@ -117,6 +120,18 @@ export default {
       text-indent: 2em;
       font-size: 16px;
       line-height: 30px;
+    }
+  }
+  .articleBottom {
+    margin-top: 3px;
+    border-top: 1px solid #00000047;
+    padding: 10px 7px;
+    .mark {
+      text-indent: 2em;
+      font-size: 16px;
+      a {
+        color: #03A9F4;
+      }
     }
   }
 }
