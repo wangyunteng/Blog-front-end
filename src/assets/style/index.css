@@ -12,10 +12,10 @@ body {
 }
 *{
   margin: 0px;
-  margin-top: 0px;
   padding: 0px;
   line-height: unset;
   box-sizing: border-box;
+  outline:none
 }
 
 .showAllWord {

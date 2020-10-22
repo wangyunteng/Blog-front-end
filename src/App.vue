@@ -33,6 +33,6 @@ export default {
   }
   .showContent {
     position: relative;
-    padding: 66px 0px;
+    padding-top: 66px;
   }
 </style>

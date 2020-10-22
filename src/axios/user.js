@@ -3,7 +3,7 @@ import axios from './request.js'
 export function login (data) {
   return axios({
     method: 'post',
-    url: '/login',
+    url: '/users/login',
     data: data
   })
 }
@@ -11,7 +11,7 @@ export function login (data) {
 export function register (data) {
   return axios({
     method: 'post',
-    url: '/register',
+    url: '/users/register',
     data: data
   })
 }

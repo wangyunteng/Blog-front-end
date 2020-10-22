@@ -79,8 +79,8 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           let form = {
-            admin: this.$md5(this.ruleForm.admin.toString()),
-            password: this.$md5(this.ruleForm.pass.toString())
+            userName: this.ruleForm.admin.toString(),
+            password: this.ruleForm.pass.toString()
           }
           register(form)
             .then((res) => {

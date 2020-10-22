@@ -34,8 +34,8 @@ export default {
     },
     loginUser () {
       let form = {
-        admin: this.$md5(this.admin),
-        password: this.$md5(this.password)
+        userName: this.admin,
+        password: this.password
       }
       login(form)
         .then(res => {

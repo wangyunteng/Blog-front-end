@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="flex">
-        <div class="title">文章管理</div>
+        <h2 class="title">标题：</h2>
         <input type="text" class="content" placeholder="文章标题" v-model="title">
         <button @click="submit" class="submit">提交</button>
       </div>
@@ -10,9 +10,8 @@
             ref="md"
             @change="change"
             style="min-height: 600px"
+            class="markdown"
         />
-        <el-button type="text" @click="dialogVisible = true">点击打开 Dialog</el-button>
-
         <el-dialog
           title="提示"
           :visible.sync="dialogVisible"
@@ -74,32 +73,42 @@ export default {
 <style lang="less" scoped>
   .flex {
     display: flex;
-    height: 50px;
+    height: 80px;
     font-size: 16px;
     align-items: center;
     .title {
-      font-size: 18px;
+      font-size: 20px;
       padding-left: 30px;
       width: 10%;
-      line-height: 50px;
+      text-align: right;
     }
     input {
-      font-size: 18px;
-      height: 30px;
+      font-size: 20px;
+      height: 40px;
       width: 60%;
       border-radius: 4px;
       text-indent: 1em;
+      border: 1px solid #9e9e9ea8;
+      &:focus {
+        border: 1px solid #9e9e9ea8;
+        outline:none
+      }
     }
     .submit {
-      width: 8%;
-      height: 30px;
-      margin-left: 5%;
-      background: #2196f3c2;
+      font-size: 20px;
+      width: 90px;
+      height: 40px;
+      margin-left: 20px;
+      background: #607D8B;
       border: 0px;
       color: white;
       cursor: pointer;
       border-radius: 4px;
-      box-shadow: 1px 1px 3px #4040408a;
+      box-shadow: 0px 0px 8px #404040ad;
     }
+  }
+  .markdown {
+    width: 94%;
+    margin: 0 auto;
   }
 </style>
